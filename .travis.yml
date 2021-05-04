@@ -9,6 +9,7 @@
 # Script License      : Apache License, Version 2 or later
 #
 # ----------------------------------------------------------------------------
+
 language: java
 
 sudo: True
@@ -18,6 +19,6 @@ arch:
   - amd64
   - ppc64le
   
- script:
+script:
   - mvn install -DskipTests=true -B -V
   - mvn test -B
